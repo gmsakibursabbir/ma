@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <title>
+      Expert Paid Social Media Advertising | M&A - Boost ROI & Brand Visibility
+    </title>
+    <!-- Splide CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css"
+    />
+    <style>
+      @keyframes slideRight {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(5px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      .animate-slide {
+        animation: slideRight 1s infinite ease-in-out;
+      }
+      .splide__arrow--next {
+        right: -15px;
+      }
+      .splide__arrow--prev {
+        left: -15px;
+      }
+    </style>
+  </head>
+  <body class="font-figtree">
+    <!-- header -->
+    <header class="sticky top-0 bg-white shadow-md z-50">
+      <nav
+        class="mx-auto w-full md:max-w-7xl px-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <a href="/" class="max-w-32 md:lg:max-w-40 lg:max-w-28">
+          <img src="./img/logo.jpg" alt="logo" />
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden p-2" id="menu-toggle">
+          <svg
+            id="menu-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-7 h-7"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-7 text-lg">
+          <li>
+            <a
+              href="#hero"
+              class="text-lg font-medium text-[#2D2D2D] hover:text-[#FF4500]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="text-lg font-medium text-[#2D2D2D] hover:text-[#FF4500]"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="text-lg font-medium text-[#2D2D2D] hover:text-[#FF4500]"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#testimonial"
+              class="text-lg font-medium text-[#2D2D2D] hover:text-[#FF4500]"
+              >Testimonial</a
+            >
+          </li>
+        </ul>
+
+        <!-- Call to Action Button -->
+        <a
+          href="#newsletter"
+          class="relative hidden md:inline-flex items-center px-8 lg:px-12 py-2 overflow-hidden text-lg font-medium text-[#0A2463] border-2 border-[#0A2463] rounded-full hover:text-white group hover:bg-gray-50"
+        >
+          <span
+            class="absolute left-0 block w-full h-0 transition-all bg-[#0A2463] opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"
+          ></span>
+          <span
+            class="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
+          </span>
+          <span class="relative uppercase">Contact</span>
+        </a>
+      </nav>
+      <!-- Mobile Menu (Hidden by Default) -->
+      <ul
+        id="mobile-menu"
+        class="hidden md:hidden flex flex-col items-center bg-base-200 space-y-4 py-4"
+      >
+        <li><a href="#" class="hover:text-[#FF4500]">Home</a></li>
+        <li><a href="#" class="hover:text-[#FF4500]">About</a></li>
+        <li><a href="#" class="hover:text-[#FF4500]">Services</a></li>
+        <li><a href="#" class="hover:text-[#FF4500]">Blog</a></li>
+        <li><a href="#" class="hover:text-[#FF4500]">Contact</a></li>
+      </ul>
+    </header>
+    <!-- main start -->
+    <main>
+      <section
+        id="hero"
+        class="relative py-10 md:py-32 lg:py-48 bg-cover bg-center bg-no-repeat"
+        style="background-image: url('./img/hero-bg.webp')"
+      >
+        <!-- Overlay -->
+        <div
+          class="absolute inset-0 bg-black/40 bg-opacity-70 backdrop-blur-md"
+        ></div>
+
+        <!-- Content -->
+        <div
+          class="relative z-10 mx-auto w-full md:max-w-7xl px-4 flex flex-col items-center justify-center h-full text-center text-white"
+        >
+          <div class="max-w-3xl mx-auto">
+            <h1 class="text-3xl md:text-5xl font-montserrat font-bold">
+              Elevate Your Brand with Argent’s Precision Advertising
+            </h1>
+            <p
+              class="mt-2 mb-5 md:mt-5 md:mb-8 text-base md:text-lg text-center"
+            >
+              Data-driven social media campaigns, SEO strategies, and creative
+              design tailored to your brand—delivering measurable results,
+              higher engagement, and scalable growth."
+            </p>
+            <a
+              href="#"
+              class="inline-block px-6 py-2 md:px-8 md:py-3 text-base md:text-lg border-[2px] border-[#fff] hover:bg-white hover:text-[#0A2463] rounded-full transition duration-300 sedulebtn uppercase"
+            >
+              Schedule Now
+              <i
+                class="ri-arrow-right-line inline-block ml-2 text-lg md:text-xl animate-slide"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- about -->
+      <section class="py-8 md:py-16" id="about">
+        <div
+          class="mx-auto w-full md:max-w-7xl px-4 flex flex-col md:flex-row justify-between items-center"
+        >
+          <div class="w-full md:w-6/10 order-2 md:order-1">
+            <div>
+              <h2
+                class="text-xl md:text-4xl font-bold font-montserrat text-[#2D2D2D] mb-3 md:mb-5 text-center md:text-start"
+              >
+                Why Choose M&A?
+              </h2>
+              <ul class="space-y-2">
+                <li class="text-base md:text-xl font-medium text-[#2D2D2D]">
+                  <i
+                    class="ri-checkbox-circle-fill text-[#0A2463] text-xl md:text-2xl"
+                  ></i>
+                  <strong>Targeted Reach</strong>: Engage users beyond your
+                  existing followers.
+                </li>
+                <li class="text-base md:text-xl font-medium text-[#2D2D2D]">
+                  <i
+                    class="ri-checkbox-circle-fill text-[#0A2463] text-xl md:text-2xl"
+                  ></i>
+                  <strong>Cost-Effective</strong>: Budget-friendly strategies
+                  for every scale.
+                </li>
+
+                <li class="text-base md:text-xl font-medium text-[#2D2D2D]">
+                  <i
+                    class="ri-checkbox-circle-fill text-[#0A2463] text-xl md:text-2xl"
+                  ></i>
+                  <strong>Brand Visibility</strong>: Dominate feeds with
+                  eye-catching ads.
+                </li>
+                <li class="text-base md:text-xl font-medium text-[#2D2D2D]">
+                  <i
+                    class="ri-checkbox-circle-fill text-[#0A2463] text-xl md:text-2xl"
+                  ></i>
+                  <strong>Lead Generation</strong>: Turn clicks into
+                  conversions.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full md:w-4/10 order-1 md:order-2">
+            <div>
+              <img src="./img/about.webp" alt="about" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services  -->
+      <section class="py-8 md:py-20 bg-[#F8F8F8]" id="services">
+        <div class="mx-auto w-full md:max-w-7xl px-4 space-y-6 md:space-y-10">
+          <h2
+            class="text-xl md:text-4xl font-bold font-montserrat text-[#2D2D2D] text-center"
+          >
+            Our Expertise, Your Advantage
+          </h2>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8"
+          >
+            <!-- items 1 -->
+            <div
+              class="flex justify-center items-center flex-col bg-white py-8 px-5 rounded-3xl shadow-sm hover:shadow-lg text-[#2D2D2D]"
+            >
+              <div><img src="./img/s1.png" alt="" class="max-w-48" /></div>
+              <h3 class="text-lg md:text-2xl font-bold text-center">
+                Paid Social Media Advertising
+              </h3>
+              <p class="text-center text-base md:text-lg pt-2 md:pt-4">
+                Targeted ad campaigns on platforms like Meta
+                (Facebook/Instagram), TikTok, and LinkedIn to boost brand
+                visibility and conversions
+              </p>
+            </div>
+            <!-- items 2 -->
+            <div
+              class="flex justify-center items-center flex-col bg-white py-8 px-5 rounded-3xl shadow-sm hover:shadow-lg text-[#2D2D2D]"
+            >
+              <div><img src="./img/s2.png" alt="" class="max-w-48" /></div>
+              <h3 class="text-lg md:text-2xl font-bold text-center">
+                Search Engine Optimization
+              </h3>
+              <p class="text-center text-base md:text-lg pt-2 md:pt-4">
+                Improve organic search rankings through keyword optimization,
+                on-page SEO, and backlink strategies
+              </p>
+            </div>
+            <!-- items 3 -->
+            <div
+              class="flex justify-center items-center flex-col bg-white py-8 px-5 rounded-3xl shadow-sm hover:shadow-lg text-[#2D2D2D]"
+            >
+              <div><img src="./img/s3.png" alt="" class="max-w-48" /></div>
+              <h3 class="text-lg md:text-2xl font-bold text-center">
+                Online Reputation Management
+              </h3>
+              <p class="text-center text-base md:text-lg pt-2 md:pt-4">
+                Monitor and enhance brand perception by addressing reviews,
+                managing crises, and fostering
+              </p>
+            </div>
+            <!-- items 4 -->
+            <div
+              class="flex justify-center items-center flex-col bg-white py-8 px-5 rounded-3xl shadow-sm hover:shadow-lg text-[#2D2D2D]"
+            >
+              <div><img src="./img/s4.png" alt="" class="max-w-48" /></div>
+              <h3 class="text-lg md:text-2xl font-bold text-center">
+                Social Media Audits
+              </h3>
+              <p class="text-center text-base md:text-lg pt-2 md:pt-4">
+                Analyze platform performance, content strategy, and audience
+                demographics to refine marketing efforts
+              </p>
+            </div>
+            <!-- items 5 -->
+            <div
+              class="flex justify-center items-center flex-col bg-white py-8 px-5 rounded-3xl shadow-sm hover:shadow-lg text-[#2D2D2D]"
+            >
+              <div><img src="./img/s5.png" alt="" class="max-w-48" /></div>
+              <h3 class="text-lg md:text-2xl font-bold text-center">
+                Content Curation & Strategy
+              </h3>
+              <p class="text-center text-base md:text-lg pt-2 md:pt-4">
+                Create and distribute platform-specific content (e.g., videos,
+                blogs, infographics) to engage audiences
+              </p>
+            </div>
+            <!-- items 1 -->
+            <div
+              class="flex justify-center items-center flex-col bg-white py-8 px-5 rounded-3xl shadow-sm hover:shadow-lg text-[#2D2D2D]"
+            >
+              <div><img src="./img/s6.png" alt="" class="max-w-48" /></div>
+              <h3 class="text-lg md:text-2xl font-bold text-center">
+                Pay-Per-Click (PPC) Management
+              </h3>
+              <p class="text-center text-base md:text-lg pt-2 md:pt-4">
+                Manage Google Ads, Bing Ads, and social media PPC campaigns for
+                immediate traffic and lead generation
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonial  -->
+      <section class="py-8 md:pt-20 md:pb-40 bg-[#F5F5F5]" id="testimonial">
+        <div class="mx-auto w-full md:max-w-7xl px-4 space-y-6 md:space-y-10">
+          <h2
+            class="text-xl md:text-4xl font-bold font-montserrat text-[#2D2D2D] text-center"
+          >
+            What Our Clients Say
+          </h2>
+
+          <!-- Splide Container -->
+          <div id="testimonial-slider" class="splide mx-2">
+            <div class="splide__track p-2">
+              <ul class="splide__list">
+                <!-- Testimonial 1 -->
+                <li
+                  class="splide__slide bg-white p-6 rounded-xl shadow-md flex flex-col items-center justify-center text-center"
+                >
+                  <p class="text-gray-600 italic">
+                    "Absolutely fantastic service! Helped my business grow 2x."
+                  </p>
+                  <div class="mt-5 flex justify-center items-center flex-col">
+                    <img
+                      src="https://i.pravatar.cc/80?img=1"
+                      alt="User"
+                      class="w-10 h-10 rounded-full border-2 border-blue-500"
+                    />
+                    <h3 class="text-lg font-semibold mt-2">John Doe</h3>
+                    <p class="text-sm text-gray-500">CEO, XYZ Company</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Pagination -->
+            <div class="splide__pagination mt-4"></div>
+          </div>
+        </div>
+      </section>
+      <!-- newsleter -->
+      <section class="" id="newsletter">
+        <div
+          class="max-w-3xl mx-auto text-center bg-[#0a2463] py-10 md:py-12 px-7 md:rounded-2xl md:-mt-[100px]"
+        >
+          <h2 class="text-2xl md:text-3xl font-bold text-white">
+            Subscribe to Our Newsletter
+          </h2>
+          <p class="text-white mt-2">
+            Stay updated with the latest news, trends, and special offers.
+          </p>
+
+          <form
+            id="newsletterForm"
+            class="mt-7 flex flex-col sm:flex-row items-center gap-3"
+          >
+            <input
+              type="email"
+              id="emailInput"
+              class="w-full sm:w-auto flex-1 px-4 py-3 border rounded-lg text-white focus:ring-2 focus:ring-blue-500 outline-none"
+              placeholder="Enter your email"
+              required
+            />
+            <button
+              type="submit"
+              class="px-6 py-3 bg-white text-[#0a2463] rounded-lg font-medium transition hover:bg-[#FF4500] hover:text-white flex items-center justify-center gap-2 cursor-pointer w-full sm:w-auto"
+            >
+              Subscribe <span class="animate-bounce">📩</span>
+            </button>
+          </form>
+
+          <p id="successMessage" class="hidden text-green-600 font-medium mt-3">
+            ✅ Thank you for subscribing!
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- main end -->
+    <!-- footer start -->
+    <footer class="pt-8 pb-6 md:pt-20 md:pb-10">
+      <div class="mx-auto w-full md:max-w-7xl px-4 space-y-10">
+        <div class="grid grid-cols-12 pb-3 lg:pb-6 gap-6 lg:gap-8">
+          <div class="col-span-12 lg:col-span-3">
+            <div class="max-w-40">
+              <img src="./img/logo.jpg" alt="logo" />
+            </div>
+          </div>
+
+          <div
+            class="col-span-12 md:col-span-6 lg:col-span-3 order-4 lg:order-0"
+          >
+            <h3
+              class="pb-2 md:pb-4 text-lg md:text-xl font-bold text-[#2D2D2D]"
+            >
+              Headquarter
+            </h3>
+            <ul class="space-y-[6px]">
+              <li>
+                <a
+                  href="#"
+                  class="text-[#2D2D2D] font-medium hover:text-[#FF4500] flex gap-2 group"
+                >
+                  <i
+                    class="ri-map-pin-2-fill text-[#0a2463] text-lg group-hover:text-[#FF4500]"
+                  ></i>
+                  Dubai, United Arab Emirates
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#2D2D2D] font-medium hover:text-[#FF4500] flex gap-2 group"
+                >
+                  <i
+                    class="ri-phone-fill text-[#0a2463] text-lg group-hover:text-[#FF4500]"
+                  ></i>
+                  +971 56 971 961 2
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#2D2D2D] font-medium hover:text-[#FF4500] flex gap-2 group"
+                >
+                  <i
+                    class="ri-mail-fill text-[#0a2463] text-lg group-hover:text-[#FF4500]"
+                  ></i>
+                  info@pledgemc.com
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-span-12 md:col-span-6 lg:col-span-3">
+            <h3
+              class="pb-2 md:pb-4 text-lg md:text-xl font-bold text-[#2D2D2D]"
+            >
+              Services
+            </h3>
+            <ul class="space-y-[6px]">
+              <li>
+                <a
+                  href="#"
+                  class="text-[#2D2D2D] font-medium hover:text-[#FF4500]"
+                  >Paid Social Media Advertising</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#2D2D2D] font-medium hover:text-[#FF4500]"
+                  >Strategy Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#2D2D2D] font-medium hover:text-[#FF4500]"
+                  >Social Media Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#2D2D2D] font-medium hover:text-[#FF4500]"
+                  >Creative Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#2D2D2D] font-medium hover:text-[#FF4500]"
+                  >SEO</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#2D2D2D] font-medium hover:text-[#FF4500]"
+                  >Non Digital Ads</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#2D2D2D] font-medium hover:text-[#FF4500]"
+                  >Influencer Marketing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#2D2D2D] font-medium hover:text-[#FF4500]"
+                  >Video Production</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#2D2D2D] font-medium hover:text-[#FF4500]"
+                  >Ecommerce Marketing</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-span-12 md:col-span-6 lg:col-span-3">
+            <h3
+              class="pb-2 md:pb-4 text-lg md:text-xl font-bold text-[#2D2D2D]"
+            >
+              Links
+            </h3>
+            <ul class="space-y-[6px]">
+              <li>
+                <a
+                  href="#hero"
+                  class="text-[#2D2D2D] font-medium hover:text-[#FF4500]"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-[#2D2D2D] font-medium hover:text-[#FF4500]"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-[#2D2D2D] font-medium hover:text-[#FF4500]"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#testimonial"
+                  class="text-[#2D2D2D] font-medium hover:text-[#FF4500]"
+                  >Testimonial</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#newsletter"
+                  class="text-[#2D2D2D] font-medium hover:text-[#FF4500]"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="pt-6 border-t border-[#2D2D2D] text-sm md:text-base">
+          <p class="text-center">
+            © 2025 M&A. All rights reserved. Developed by Zellyo.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <button
+      id="scrollToTopBtn"
+      class="fixed w-10 h-10 md:w-12 md:h-12 bottom-6 right-6 bg-[#0A2463] text-white text-lg md:text-xl p-3 rounded-full shadow-lg hover:bg-[#FF4500] transition-opacity duration-300 opacity-0 hidden flex justify-center items-center"
+    >
+      <i class="ri-arrow-up-long-line"></i>
+    </button>
+
+    <!-- js -->
+    <!-- Splide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#testimonial-slider", {
+          type: "loop",
+          perPage: 3,
+          perMove: 1,
+          gap: "20px",
+          autoplay: true,
+          interval: 3000,
+          pauseOnHover: true,
+          pagination: true,
+          breakpoints: {
+            640: { perPage: 1 },
+            967: { perPage: 2 },
+            1024: { perPage: 3 },
+          },
+        }).mount();
+      });
+    </script>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

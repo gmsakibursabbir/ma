@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: false;
+}
+
+
+@theme{
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-figtree: 'Figtree', sans-serif;
+}
+
+
+  @keyframes slideRight {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .animate-slide {
+    animation: slideRight 1s infinite ease-in-out;
+  }
+
