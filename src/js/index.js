@@ -2,6 +2,15 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
   const menu = document.getElementById("mobile-menu");
   menu.classList.toggle("hidden");
 });
+
+// Close menu when clicking on a link
+document.querySelectorAll("#mobile-menu a").forEach((link) => {
+  link.addEventListener("click", function () {
+    const menu = document.getElementById("mobile-menu");
+    menu.classList.add("hidden"); // Hide menu
+  });
+});
+
 // scroll to top
 const scrollBtn = document.getElementById("scrollToTopBtn");
 

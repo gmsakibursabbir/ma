@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -167,16 +167,24 @@
         <div
           class="relative z-10 mx-auto w-full md:max-w-7xl px-4 flex flex-col items-center justify-center h-full text-center text-white"
         >
-          <div class="max-w-3xl mx-auto">
-            <h1 class="text-3xl lg:text-5xl font-montserrat font-bold">
-              Elevate Your Brand with Argent’s Precision Advertising
+          <div class="max-w-4xl mx-auto">
+            <span class="text-lg lg:text-xl font-medium">
+              Maximize ROI with Next-Generation Promotional Strategies
+            </span>
+            <h1
+              class="text-[28px] lg:text-5xl font-montserrat font-bold mt-1 md:mt-3"
+            >
+              Achieve Omnichannel Marketing with Paid Ads × ASP
             </h1>
             <p
               class="mt-2 mb-5 md:mt-5 md:mb-8 text-base md:text-lg text-center"
             >
-              Data-driven social media campaigns, SEO strategies, and creative
-              design tailored to your brand—delivering measurable results,
-              higher engagement, and scalable growth."
+              Our solution combines the immediate impact of paid advertising
+              with the performance-based marketing of ASP (Affiliate Service
+              Provider). Leveraging robust data analytics and dedicated support,
+              we deliver targeted ad management and rapid optimization
+              strategies tailored to your audience. We support your business
+              from every angle, driving sustainable growth.
             </p>
             <a
               href="#newsletter"
@@ -207,30 +215,24 @@
                   <i
                     class="ri-checkbox-circle-fill text-[#0A2463] text-xl lg:text-2xl"
                   ></i>
-                  <strong>Targeted Reach</strong>: Engage users beyond your
-                  existing followers.
+                  <strong>Target Optimization</strong>: Precisely targeted ad
+                  delivery that directly reaches potential customers.
                 </li>
                 <li class="text-base lg:text-xl font-medium text-[#2D2D2D]">
                   <i
                     class="ri-checkbox-circle-fill text-[#0A2463] text-xl lg:text-2xl"
                   ></i>
-                  <strong>Cost-Effective</strong>: Budget-friendly strategies
-                  for every scale.
+                  <strong>Cost Efficiency</strong>: A performance-based
+                  compensation model that maximizes your return on investment.
                 </li>
 
                 <li class="text-base lg:text-xl font-medium text-[#2D2D2D]">
                   <i
                     class="ri-checkbox-circle-fill text-[#0A2463] text-xl lg:text-2xl"
                   ></i>
-                  <strong>Brand Visibility</strong>: Dominate feeds with
-                  eye-catching ads.
-                </li>
-                <li class="text-base lg:text-xl font-medium text-[#2D2D2D]">
-                  <i
-                    class="ri-checkbox-circle-fill text-[#0A2463] text-xl lg:text-2xl"
-                  ></i>
-                  <strong>Lead Generation</strong>: Turn clicks into
-                  conversions.
+                  <strong>Comprehensive Support</strong>: A dedicated team that
+                  provides full backing from operations to
+                  continuous improvement.
                 </li>
               </ul>
             </div>
@@ -586,7 +588,9 @@
         </div>
         <div class="pt-6 border-t border-[#2D2D2D] text-sm md:text-base">
           <p class="text-center">
-            © 2025 M&A. All rights reserved. Developed by Zellyo.
+            © 2025 M&A. All rights reserved. Developed by
+            <a href="https://zellyo.com" class="hover:text-[#FF4500]">Zellyo</a
+            >.
           </p>
         </div>
       </div>
@@ -620,6 +624,26 @@
             1024: { perPage: 3 },
           },
         }).mount();
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbarHeight = document.querySelector("nav")?.offsetHeight || 80; // Adjust as needed
+
+        document.querySelectorAll("a[href^='#']").forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - navbarHeight - 10, // Offset navbar height
+                behavior: "smooth",
+              });
+            }
+          });
+        });
       });
     </script>
 
